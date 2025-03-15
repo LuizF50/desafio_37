@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decifrando o Código Galáctico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Decifrando o Código Galáctico 🚀</h1>
+        
+        <label for="mensagemCodificada" class="sr-only">Insira a mensagem codificada</label>
+        <input 
+            type="text" 
+            id="mensagemCodificada"
+            placeholder="Insira a mensagem codificada"
+            aria-label="Campo para mensagem codificada"
+            aria-describedby="ajuda-mensagem"
+        >
+        
+        <span id="ajuda-mensagem" class="sr-only">
+            Digite os números separados por espaço. Por exemplo: 1 4 9 16 25
+        </span>
+        
+        <button 
+            class="btn-decodificar"
+            aria-label="Decodificar mensagem"
+            onclick="decodificarMensagem()"
+        >
+            Decodificar
+        </button>
+        
+        <p 
+            id="mensagemDecodificada"
+            class="resultado"
+            role="alert"
+            aria-live="polite"
+        ></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
